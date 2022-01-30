@@ -1,0 +1,8 @@
+.Net Laravel fremwork:--
+MVC= MOdel view controler
+python jango fremwork:--
+MTV=Model templet view
+
+1.thisIsMyname ->camel case ||Method/function
+2.ThisIsMyName ->studly case ||Model+Controler
+3.this_is_name ->snake case 	||Blade Template
