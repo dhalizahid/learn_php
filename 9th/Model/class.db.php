@@ -20,26 +20,26 @@
 			if (!$result) {
 				throw new Exception('Error exceuting query');
 			}
-			else{
+			else
 				return true;
-			}
 		}
-
-		public function close(){
-			mysqli_close($this->connection);
-		}
-
 		public function fetch_result($query){
 			$result = mysqli_query($this->connection,$query);
-			if (!$result) {
+			if (!$result) 
+			{
 				throw new Exception('Error in fetching result');
 			}
 			else{
-				while ($row = mysqli_fetch_array($result)) {
-					$data[]=$row;
+				$data = [];
+				while($row = mysqli_fetch_array($result))
+				{
+					$data[]= $row;
 				}
 				return $data;
 			}
+		}
+		public function close(){
+			mysqli_close($this->connection);
 		}
 	}
 ?>
